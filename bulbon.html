@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myimage" onclick="changeimage()" src="https://img.favpng.com/23/20/7/light-bulb-cartoon-png-favpng-KjCCX4BFDfYesuQmjf89HciZ7.jpg";>
+    <p> click the light bulb to turn on and off</p>
+    <script>
+        function changeimage()
+        {
+            var image= document.getElementById('myimage');
+            if(image.src.match("light-bulb")){
+                image.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmhhIXPrD9zCIsUvXndETDnXbCP9y4tQU6qQ&usqp=CAU";
+            }
+            else
+            {
+                image.src="https://img.favpng.com/23/20/7/light-bulb-cartoon-png-favpng-KjCCX4BFDfYesuQmjf89HciZ7.jpg"
+            }
+        }
+    </script>
+</html>
