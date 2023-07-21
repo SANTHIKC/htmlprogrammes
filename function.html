@@ -6,20 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="demo">page</p>
     <script>
-        class A
+        function add()
         {
-           sum()
-          {
-            document.write("hello");
-          }
-        
-          }
-          let data =new A();
-          data.sum();
-         
-        
+            document.getElementById("demo").innerHTML="Paragraph Changed";
+        }
     </script>
+    <button type="button" onclick="add()">try it</button>
 </body>
 </html>
